@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: gray;
+}
+
+.box{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 9px;
+    border: none;
+    outline: none;
+    padding: .6rem;
+    width: 20%;
+    height: 24rem;
+}
+
+@media only screen and (max-width:505px){
+    .box{
+        width: 30%;
+        height: auto;
+    }
+    
+    .box img {
+        width: 80px;
+    }
+    .box h3{
+        font-size: 15px;
+        font-weight: 900;
+    }
+
+    .box p{
+        font-size: 10px;
+    }
+}
+
+/* Media Queries for Responsive Design */
+@media only screen and (max-width: 768px) {
+    /* For small devices like mobile phones */
+    .box {
+        width: 30%;
+        height: auto;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    /* For medium-sized devices like tablets */
+    .box {
+        width: 25%;
+        height: auto;
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+    /* For large devices like desktops */
+    .box {
+        width: 20%;
+        height: auto;
+    }
+}
