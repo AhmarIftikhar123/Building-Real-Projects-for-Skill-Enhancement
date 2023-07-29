@@ -24,9 +24,17 @@ body{
     border: none;
     outline: none;
     padding: .6rem;
-    width: 20%;
+    width: 18%;
     height: 24rem;
+    box-shadow: 5px 5px .9px .3px rgba(85, 84, 84, 0.5);
 }
+
+.box h3{
+    margin: 8px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
 
 @media only screen and (max-width:505px){
     .box{
@@ -56,10 +64,31 @@ body{
     }
 }
 
+@media only screen and (min-width:500px) and (max-width:650px){
+    .box{
+        width:25%;
+        height: 50%;
+    }
+    .box img{
+        width: 50px;
+    }
+}
+
+@media only screen and (min-width:651px)and(max-width:890px){
+    .box{
+        width:20%;
+        height: auto;
+    }
+    .box img{
+        width: 100px;
+    }
+}
+
+
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
     /* For medium-sized devices like tablets */
     .box {
-        width: 25%;
+        width: 17%;
         height: auto;
     }
 }
@@ -67,7 +96,7 @@ body{
 @media only screen and (min-width: 1025px) {
     /* For large devices like desktops */
     .box {
-        width: 20%;
+        width: 15%;
         height: auto;
     }
 }
